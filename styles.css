@@ -289,7 +289,7 @@ iframe {
 /* Host section design */
 #host {
   background-color: #1a0b2e;
-  padding: ;
+  padding-bottom: 7rem;
 }
 .host-card {
   display: flex;
@@ -301,35 +301,84 @@ iframe {
   border-radius: 2.2rem;
   margin-top: 2.4rem;
 }
-.host-description {
-}
 
 .host-description h2 {
   font-size: 2.2rem;
   font-weight: bold;
   color: var(--primary-color);
-}
-.social-icon {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 1rem;
-}
-.social-icon li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
+  margin-bottom: 1rem;
 }
 
-.social-icon li a {
-  text-decoration: none;
-  padding: 12px 13.5px;
+.social-icon {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+.social-icon div {
+  display: flex;
+  align-items: center;
   border: 2px solid #533c72;
   border-radius: 50%;
+  padding: 13px;
 }
-.social-icon li a img{
-    width: 100%;
-    height: 100%;
+.social-icon div img {
+  width: 1.2rem;
+}
+/* footer section design */
+footer {
+  background-color: #230e3d;
+}
+.footer {
+  background-image: url(./assets/footer-bg.png);
+  background-position: center center;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.footer-flex {
+  padding: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-flex h2 {
+  color: #ffffff;
+  font-size: 4rem;
+}
+.footer-flex h2 span {
+  background-image: linear-gradient(
+    17deg,
+    rgba(247, 233, 63, 1) 0%,
+    rgba(251, 9, 180, 1) 51%,
+    rgba(145, 0, 248, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+.footer-icon-box {
+  margin: 1.8rem 0px;
+}
+.footer-icon-box ul {
+  gap: 2.5rem;
+}
+.footer-icon-box ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  list-style: none;
+}
+.footer-icon-box ul li a {
+  font-size: 1rem;
+  display: flex;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.footer-icon-box ul li a img {
+  margin-right: 0.5rem;
+}
+.copyright {
+  margin-top: 2px;
 }
