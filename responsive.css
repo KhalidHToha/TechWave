@@ -1,0 +1,156 @@
+/* responsive design for Mobile and Tablets */
+
+@media only screen and (max-width: 576px) {
+  header {
+  }
+  nav .btn {
+    display: none;
+  }
+  .container {
+    padding: 0px 1.25rem;
+  }
+  .manu-btn {
+    display: block;
+    width: 2rem;
+  }
+  .manu-btn img {
+    width: 1.8rem;
+  }
+
+  .menu-items {
+    display: none;
+  }
+  .hero {
+    height: 42rem;
+    padding-top: 4.5rem;
+  }
+  #hero {
+    height: 18rem;
+  }
+  .banner {
+    padding: 0px;
+  }
+  .banner .banner-cicle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/hero-circle.png);
+    background-size: cover;
+    width: 15rem;
+    height: 15rem;
+    margin-top: -1.5rem;
+    position: relative;
+  }
+  .banner-cicle img {
+    width: 5rem;
+  }
+  .banner .banner-cicle .bach {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--highlighter);
+    border-radius: 1.8rem;
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.52);
+  }
+  .heading-2 {
+    font-size: 3rem;
+    line-height: 7rem;
+  }
+  .pera {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .about-content .pera {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+  }
+  .about-content .pera br {
+    display: none;
+  }
+
+  .about-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .choose-container-box {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "headphone"
+      "mobile"
+      "location"
+      "zap-fast"
+      "book";
+  }
+  .featured-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .featured-box iframe {
+    height: 18rem;
+  }
+  .card-header-2 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  .card-pera {
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--primary-color);
+    opacity: 0.6;
+  }
+  .host-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .host-description h2 {
+    font-size: 2.8rem;
+  }
+  .social-icon {
+    justify-content: center;
+  }
+  .footer {
+    background-size: 860px;
+    padding-top: 5rem;
+  }
+  .footer-flex h2 {
+
+    line-height: 10px;
+}
+  .footer-icon {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-icon-box ul li a {
+    font-size: 1.3rem;
+  }
+  .footer-icon-box ul li a img {
+    width: 26px;
+  }
+  .footer-icon-box ul {
+    padding: 2rem;
+  }
+  .copyright {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .container {
+    padding: 0px 1.25rem;
+  }
+  #about {
+    padding-top: 2.5rem;
+  }
+  .choose-container-box {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "headphone headphone"
+      "mobile location"
+      "zap-fast book";
+  }
+  .featured-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #host {
+    padding: 7rem;
+  }
+}
