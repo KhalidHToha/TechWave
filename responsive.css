@@ -1,7 +1,11 @@
 /* responsive design for Mobile and Tablets */
 
 @media only screen and (max-width: 576px) {
-  header {
+  .btn {
+    font-size: 1rem;
+  }
+  .btn-2 {
+    font-size: 1rem;
   }
   nav .btn {
     display: none;
@@ -111,9 +115,8 @@
     padding-top: 5rem;
   }
   .footer-flex h2 {
-
     line-height: 10px;
-}
+  }
   .footer-icon {
     flex-wrap: wrap;
     justify-content: center;

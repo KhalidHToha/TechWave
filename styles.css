@@ -35,6 +35,9 @@
   border: none;
   color: var(--primary-color);
 }
+.btn:hover{
+  
+}
 .btn-2 {
   display: flex;
   align-items: center;
