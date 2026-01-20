@@ -34,9 +34,15 @@
   );
   border: none;
   color: var(--primary-color);
+  transition-duration: 0.4s;
+  cursor: pointer;
+  transition:
+    opacity 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
 }
-.btn:hover{
-  
+.btn:hover {
+  background: #ffffff44;
+  border: 1px solid var(--primary-color);
 }
 .btn-2 {
   display: flex;
@@ -50,6 +56,12 @@
   border: 2px solid var(--highlighter);
   color: var(--highlighter);
   background: transparent;
+
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.btn-2:hover {
+  background-color: #ffffff3c;
 }
 .flex {
   display: flex;
@@ -127,6 +139,10 @@ nav ul a {
   font-size: 1.2rem;
   line-height: 120%;
   color: var(--primary-color);
+  transition-duration: 0.4s;
+}
+nav ul a:hover {
+  color: var(--highlighter);
 }
 
 /* banner section styles */
@@ -158,8 +174,29 @@ header {
   background-size: cover;
   width: 22rem;
   height: 22rem;
+  animation-name: circleAnimation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
   margin-bottom: 2rem;
   position: relative;
+}
+@keyframes circleAnimation {
+  0% {
+    box-shadow: 0px 4px 107px 11px #ffffff75;
+    border-radius: 50%;
+  }
+  25% {
+    box-shadow: 0px 4px 107px 11px #ffffff61;
+    border-radius: 50%;
+  }
+  50% {
+    box-shadow: 0px 4px 107px 11px #ffffff53;
+    border-radius: 50%;
+  }
+  100% {
+    box-shadow: 0px 4px 107px 11px #ffffff37;
+    border-radius: 50%;
+  }
 }
 .banner .banner-cicle .bach {
   position: absolute;
@@ -326,12 +363,18 @@ iframe {
   gap: 0.8rem;
   margin-top: 1rem;
 }
+
 .social-icon div {
   display: flex;
   align-items: center;
   border: 2px solid #533c72;
   border-radius: 50%;
   padding: 13px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.social-icon div:hover {
+  background-color: #ffffff3c;
 }
 .social-icon div img {
   width: 1.2rem;
