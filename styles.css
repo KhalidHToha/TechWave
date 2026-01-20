@@ -222,6 +222,9 @@ header {
 #about {
   background-color: var(--primary-bg-color);
 }
+#about .hr {
+  opacity: 0.5;
+}
 .about-content {
   text-align: center;
 }
